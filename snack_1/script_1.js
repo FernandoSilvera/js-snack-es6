@@ -58,4 +58,5 @@ for (let i = 0; i < bikes.length; i++) {
   }
 }
 
+// Print lightest bike in HTML
 lightestBikeCont.innerHTML += printBikeLiteral(lightestBike);
