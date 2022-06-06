@@ -32,8 +32,23 @@ let bikes = [
     weight: 8.5,
   },
 ];
-let lightestBike = bikes[0];
 
+let lightestBike = bikes[0];
+const lightestBikeCont = document.getElementById("lightest-bike");
+
+// ----- FUNCTIONS -----
+function printBikeLiteral(bike) {
+  const {id, weight} = bike;
+  
+  return  `
+          <div class="m-auto">
+          <h2>Name: ${id}</h2>
+          <h3>Weight: ${weight}</h3>
+          </div>
+          `
+}
+
+// Find lightest bike
 for (let i = 0; i < bikes.length; i++) {
   const bike = bikes[i];
   const {id, weight} = bike;
@@ -43,4 +58,4 @@ for (let i = 0; i < bikes.length; i++) {
   }
 }
 
-console.table(lightestBike);
+lightestBikeCont.innerHTML += printBikeLiteral(lightestBike);
