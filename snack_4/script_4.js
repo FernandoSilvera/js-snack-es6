@@ -23,7 +23,7 @@ let students = [
 ];
 
 // Uppercase names
-const studentsNamesUpper = students.map((student) => student.name.toUpperCase());
+const studentsNamesUpper = students.map(({name}) => name.toUpperCase());
 console.log(studentsNamesUpper);
 
 
