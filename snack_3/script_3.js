@@ -4,11 +4,16 @@
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
 
-const names = ["Michele", "Fabio", "Roberto", "Giovanni", "Simone", "Chiara"];
+const myArray = ["Michele", "Fabio", "Roberto", "Giovanni", "Simone", "Chiara"];
+const newArray = [];
 const min = 1;
 const max = 4;
 
 // forEach
-names.forEach((name, i, names) => {
-  
+myArray.forEach((name, i) => {
+  if (i >= min && i <= max) {
+    newArray.push(name)
+  }
 });
+
+console.log(newArray);
