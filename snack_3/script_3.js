@@ -5,15 +5,23 @@
 
 
 const myArray = ["Michele", "Fabio", "Roberto", "Giovanni", "Simone", "Chiara"];
-const newArray = [];
+let arrayForEach = [];
 const min = 1;
 const max = 4;
 
 // forEach
-myArray.forEach((name, i) => {
-  if (i >= min && i <= max) {
-    newArray.push(name)
+myArray.forEach((element, i) => {
+  if () {
+    arrayForEach.push(i >= min && i <= max)
   }
 });
 
-console.log(newArray);
+console.log(arrayForEach);
+
+
+// filter
+let arrayFilter = myArray.filter((element, i) => {
+  return i >= min && i <= max;
+})
+
+console.log(arrayFilter);
