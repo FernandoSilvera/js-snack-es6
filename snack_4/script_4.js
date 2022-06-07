@@ -23,16 +23,16 @@ let students = [
 ];
 
 // Uppercase names
-const studentsNamesUpper = students.map((student) => {
-  return student.name.toUpperCase();
-});
+const studentsNamesUpper = students.map((student) => student.name.toUpperCase());
 
 console.log(studentsNamesUpper);
+
 
 // Grades >= 70
 const studentsGrades70 = students.filter(({grades}) => grades >= 70);
 
 console.log(studentsGrades70);
+
 
 // Grades >= 70 && id > 120
 const studentsGradesId = students.filter(({id, grades}) => id > 120 && grades >= 70);
